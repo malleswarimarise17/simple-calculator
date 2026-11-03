@@ -1,3 +1,12 @@
+import math
+
+def power(a, b):
+    return a ** b
+
+def square_root(a):
+    if a < 0:
+        return "Error! Cannot square root negative numbers."
+    return math.sqrt(a)
 def add(a, b):
     return a + b
 
