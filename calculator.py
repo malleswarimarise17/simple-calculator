@@ -18,12 +18,18 @@ print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
 
-# For now, you can test specific numbers here:
-num1 = 10
-num2 = 5
+choice = input("Enter choice (1/2/3/4): ")
 
-print(f"\nUsing numbers: {num1} and {num2}")
-print("Addition:", add(num1, num2))
-print("Subtraction:", subtract(num1, num2))
-print("Multiplication:", multiply(num1, num2))
-print("Division:", divide(num1, num2))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+if choice == '1':
+    print("Result:", add(num1, num2))
+elif choice == '2':
+    print("Result:", subtract(num1, num2))
+elif choice == '3':
+    print("Result:", multiply(num1, num2))
+elif choice == '4':
+    print("Result:", divide(num1, num2))
+else:
+    print("Invalid input")
